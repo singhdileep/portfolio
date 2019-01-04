@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+  </head>
+  <body>
+    <form name="Login">
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username" name="userid"/>
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" name="pswrd"/>
+  </div>
+
+  <input type="button" class="btn" onclick="check(this.form)" value="Login">
+</div>
+</form>
+<script type="text/javascript">
+  function check(form)
+   {
+  if(form.userid.value=="dileep" && form.pswrd.value=="singh")
+  {
+    window.open('index.html',"_self")
+  }
+  else
+  {
+    alert("Please Enter correct UserName or password")
+  }
+  }
+
+
+</script>
+  </body>
+</html>
